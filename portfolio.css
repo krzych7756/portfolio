@@ -60,6 +60,7 @@
     opacity: 0;
     transform: translateY(30px);
     padding: 40px 20px;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .portfolio-section:hover {
