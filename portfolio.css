@@ -4,6 +4,14 @@
     background: rgba(0, 0, 0, 0.6) url('hero-background.jpg') no-repeat center center/cover;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    z-index: 2;
 }
 
 .hero-overlay {
@@ -86,6 +94,75 @@
 .feature-box:hover {
     transform: translateY(-10px);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for sections appearing on scroll */
+.section-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-section {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.portfolio-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Carousel */
+#skills-carousel {
+    padding: 60px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.skill-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 1.5rem;
+    color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(40, 53, 147, 0.8); /* default */
+}
+
+.skill-slide:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-slide[data-skill="95"] {
+    background-color: #3E51B5; /* Najwyższy odcień */
+}
+
+.skill-slide[data-skill="70"] {
+    background-color: #5C6BC0;
+}
+
+.skill-slide[data-skill="80"] {
+    background-color: #7986CB;
+}
+
+.skill-slide[data-skill="50"] {
+    background-color: #9FA8DA;
+}
+
+.skill-slide[data-skill="70"] {
+    background-color: #C5CAE9;
+}
+
+.skill-slide[data-skill="35"] {
+    background-color: #E8EAF6; /* Najniższy odcień */
+}
+
+.skill-slide[data-skill="85"] {
+    background-color: #7986CB;
 }
 
 /* Footer Styles */
