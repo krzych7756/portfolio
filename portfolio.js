@@ -24,3 +24,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Dodanie animacji do sekcji przy scrollowaniu
+document.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('.portfolio-section, .about-me, .best-features');
+    
+    sections.forEach(section => {
+        const sectionPosition = section.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+        
+        if (sectionPosition < screenPosition) {
+            section.classList.add('section-animate');
+        }
+    });
+});
