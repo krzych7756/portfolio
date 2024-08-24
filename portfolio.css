@@ -1,4 +1,5 @@
-           background-color: #000;
+ body {
+            background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif;
         }
@@ -10,13 +11,15 @@
         }
 
         .header h1 {
-            font-size: 28px;
+            font-size: 2rem;
             margin-bottom: 10px;
+            color: #fff;
         }
 
         .header h2 {
-            font-size: 22px;
+            font-size: 1.5rem;
             margin-bottom: 20px;
+            color: #fff;
         }
 
         .header a {
@@ -25,6 +28,8 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 30px;
+            display: inline-block;
+            font-weight: bold;
         }
 
         .achievements {
@@ -37,6 +42,7 @@
             padding: 20px;
             text-align: center;
             margin-bottom: 20px;
+            color: #00ff00;
         }
 
         .bio {
@@ -55,6 +61,7 @@
         .bio p {
             font-size: 16px;
             margin-bottom: 20px;
+            color: #fff;
         }
 
         .bio .checkbox {
@@ -75,4 +82,45 @@
             text-align: center;
             border-radius: 10px;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (min-width: 992px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+
+            .header h2 {
+                font-size: 2rem;
+            }
+
+            .achievements .card p {
+                font-size: 1.2rem;
+            }
+
+            .achievements .row {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+
+            .achievements .card {
+                flex: 1;
+                margin: 10px;
+            }
+
+            .bio {
+                padding: 60px 20px;
+            }
+
+            .tools .row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .tools .col-6 {
+                max-width: 250px;
+                margin-bottom: 20px;
+            }
         }
