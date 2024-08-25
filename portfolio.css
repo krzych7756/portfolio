@@ -116,6 +116,7 @@
 
             .stat-item {
                 flex-basis: 22%;
+             border-radius: 7%;
             }
 
             .tools {
