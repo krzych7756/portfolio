@@ -1,4 +1,4 @@
-  body {
+ body {
             background-color: #000;
             color: #fff;
             font-family: 'Arial', sans-serif;
@@ -63,13 +63,13 @@
         .stat-item {
             background-color: #10e685;
             color: #000;
-            padding: 0.75rem;
-            border-radius: 50%; /* Zmiana kształtu na koło */
+            padding: 1rem;
+            border-radius: 10px; /* Prostokątny, wypełniony kafelek */
             margin: 0.5rem;
             text-align: center;
             font-size: 1rem;
             font-weight: bold;
-            flex-basis: 45%;
+            flex-basis: 22%;
         }
 
         .content {
