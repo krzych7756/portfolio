@@ -64,7 +64,7 @@
             background-color: #10e685;
             color: #000;
             padding: 1rem;
-            border-radius: 10px; /* Prostokątny, wypełniony kafelek */
+           border-radius: 7%; /* Prostokątny, wypełniony kafelek */
             margin: 0.5rem;
             text-align: center;
             font-size: 1rem;
