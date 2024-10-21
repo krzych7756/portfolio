@@ -7,12 +7,74 @@
     <title>Portfolio - Krzysztof Chrzanowski</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="portfolio.css">
+    <style>
+        /* Stylizacja kafelków dla narzędzi */
+        .tools {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tool-item {
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 10px; /* subtelniejsze zaokrąglenie */
+            text-align: center;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .tool-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Stylizacja hero */
+        .header {
+            background-image: url('your-hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+
+        .header h1, .header h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Wyśrodkowanie tekstu w hero */
+        .header h1, .header h2 {
+            margin: 0 auto;
+        }
+
+        .header .btn {
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        /* Stylizacja grafiki w hero */
+        @media (max-width: 768px) {
+            .header {
+                background-image: url('your-mobile-hero-image.jpg'); /* Dodaj obraz mobilny */
+                padding: 100px 20px;
+            }
+        }
+
+        /* Subtelniejsze zaokrąglenia */
+        .stat-item, .content, .footer {
+            border-radius: 8px;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-      <header class="header">
+    <header class="header">
         <h1>Chodź, opowiem Ci historię.</h1>
         <h2>Historię o mnie.</h2>
-        <a href="#konkrety" class="btn">Przejdź do konkretów</a>
+        <a href="#konkrety" class="btn btn-primary">Przejdź do konkretów</a>
     </header>
 
     <section class="section">
@@ -42,7 +104,7 @@
                 Były tam takie określenia, jak „nacza rozkoszy”, „mozaiki wspaniałości”, „feeria zachwytu” i inne pobłogosławione rozbłyski. Masakra.
             </p>
         </div>
-        <a href="#ldn" class="btn" style="display: block; text-align: center;">Zobacz mnie na LDN</a>
+        <a href="#ldn" class="btn btn-primary" style="display: block; text-align: center;">Zobacz mnie na LDN</a>
     </section>
 
     <section class="section">
